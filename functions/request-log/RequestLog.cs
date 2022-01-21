@@ -7,7 +7,7 @@ using Microsoft.Extensions.Logging;
 using System;
 using System.IO;
 
-namespace header_log
+namespace request_log
 {
     public static class RequestLog
     {
