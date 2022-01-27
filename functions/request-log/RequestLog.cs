@@ -25,7 +25,7 @@ namespace request_log
         }
         
         [FunctionName("BodyLog")]
-        public static IActionResult LogBody(
+        public static async Task<IActionResult> LogBody(
             [HttpTrigger(AuthorizationLevel.Anonymous, "post")] HttpRequest req,
             ILogger log)
         {
